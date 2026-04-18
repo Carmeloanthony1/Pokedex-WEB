@@ -54,31 +54,12 @@ body {
     margin: 0;
     padding: 0;
     z-index: -1;
+    background-image: url(assets/foto/Desain\ tanpa\ judul\(1\).webp);
     background-size : cover;
     background-position: center;
     background-repeat: no-repeat;
-    animation: changingbg 20s ease-in-out infinite;
-    filter:blur(20px);
+    filter:blur(5px);
     /*biar function ini berjalan selama 20 detik durasinya
     tapi selalu jalan terus jadi bakalan jalan terus selama 20
     detik cuman dalam jangka waktu selamanya*/
-}
-
-@keyframes changingbg {
-    0% {
-        background-image: url("assets/foto/5ee4d3103d54f8edf6d9b1aa211042445b7b6c9e.jpeg");
-    }
-    
-    33% {
-        background-image: url("assets/foto/A-serene-landscape-with-Pokemon-in-their-natural-habitat-perfect-as-a-HD-wallpaper.jpg");
-    }
-
-    66% {
-        background-image: url("assets/foto/e3a109880e24ae8821fa347da72f486f.jpg");
-    }
-
-    100% {
-        background-image: url("assets/foto/images.jpeg");
-    }
-
 }
