@@ -14,7 +14,7 @@ h1 {
 .groupofbox{
     display: flex; /* ngurut ke samping */
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;
     margin-top: 20px;
     padding : 10px 30px 30px 30px; 
     /* jarak konten dan border di set atas : 0, kanan : 30, bawah : 30, kiri :  30*/
@@ -23,8 +23,9 @@ h1 {
 
 }
 
-.Gen1{
+.Gen1, .Gen2, .Gen3, .Gen4, .Gen5, .Gen6, .Gen7, .Gen8, .Gen9{
     display: flex;
+    flex-direction: column;
     width: 500px; 
     height: 300px;
     
@@ -32,6 +33,13 @@ h1 {
     background-color: #3466AF;
     align-items: center;
     justify-content: center;
+    overflow : hidden;
+    color :aliceblue
+}
+
+.Gen1 img, .Gen2 img, .Gen3 img, .Gen4 img, .Gen5 img, .Gen6 img, .Gen7 img, .Gen8 img, .Gen9 img{
+    width : 100%;
+    height: auto;
 }
 body {
     margin :0;
