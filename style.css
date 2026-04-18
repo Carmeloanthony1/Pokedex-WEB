@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'pokemonfont'; /*ini bebas namanya*/
+    src: url("assets/font/Pokemon\ Solid.ttf"); /*url mu*/
+}
+
+h1 {
+    font-family: 'pokemonfont';
+    font-size: 60px;
+    color : #FFCB05;
+    text-align: center;
+    -webkit-text-stroke: 5px #3466AF;
+}
+
+.groupofbox{
+    display: flex; /* ngurut ke samping */
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    padding : 10px 30px 30px 30px; 
+    /* jarak konten dan border di set atas : 0, kanan : 30, bawah : 30, kiri :  30*/
+    justify-content: center;
+    font-family: "pokemonfont";
+
+}
+
+.Gen1{
+    display: flex;
+    width: 500px; 
+    height: 300px;
+    
+    /* lebar setiap kotaknya itu 500 dan tinggi nya 300*/
+    background-color: #3466AF;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    margin :0;
+    padding:0;
+}
+.background{
+    position: fixed; /* */
+    height: 110vh;
+    width : 110%;
+    top:-5%;
+    left:-5%;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    background-size : cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: changingbg 20s ease-in-out infinite;
+    filter:blur(20px);
+    /*biar function ini berjalan selama 20 detik durasinya
+    tapi selalu jalan terus jadi bakalan jalan terus selama 20
+    detik cuman dalam jangka waktu selamanya*/
+}
+
+@keyframes changingbg {
+    0% {
+        background-image: url("assets/foto/5ee4d3103d54f8edf6d9b1aa211042445b7b6c9e.jpeg");
+    }
+    
+    33% {
+        background-image: url("assets/foto/A-serene-landscape-with-Pokemon-in-their-natural-habitat-perfect-as-a-HD-wallpaper.jpg");
+    }
+
+    66% {
+        background-image: url("assets/foto/e3a109880e24ae8821fa347da72f486f.jpg");
+    }
+
+    100% {
+        background-image: url("assets/foto/images.jpeg");
+    }
+
+}
